@@ -2,3 +2,12 @@
 datasets/steam_games.json.gz
 datasets/user_reviews.json.gz
 datasets/users_items.json.gz
+datasets/australian_user_reviews.json
+datasets/australian_user_reviews.json
+datasets/australian_users_items.json
+datasets/output_steam_games.json
+datasets/steam_games.csv
+users_reviews.csv
+datasets/users_items.csv
+users_reviews.csv
+/env
