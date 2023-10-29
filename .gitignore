@@ -10,4 +10,4 @@ datasets/steam_games.csv
 users_reviews.csv
 datasets/users_items.csv
 users_reviews.csv
-/env
+/venv
