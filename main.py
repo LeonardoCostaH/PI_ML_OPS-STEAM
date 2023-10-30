@@ -1,8 +1,4 @@
 from fastapi import FastAPI
-import json
-import ast
-import re
-from textblob import TextBlob
 import pandas as pd
 import numpy as np
 from typing import Optional
