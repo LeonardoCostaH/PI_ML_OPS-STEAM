@@ -8,6 +8,7 @@ import numpy as np
 from typing import Optional
 import sklearn
 from sklearn.metrics.pairwise import cosine_similarity
+from ML import recomendacion_juego
 
 ruta_parquet_games = "datasets/data_steam_games.parquet"
 ruta_parquet_reviews = "datasets/data_reviews.parquet"
@@ -168,3 +169,8 @@ def developer(desarrolladora: str):
 
     return resultado
 
+
+@app.get("/recomendacion_juego/{game_id}")
+def get_recommendation(game_id: int):
+    recommendations = recomendacion_juego(game_id)
+    return recommendations
