@@ -53,6 +53,8 @@ Se desarrolló un modelo de recomendación de juegos basado en la similitud del 
 
 [https://youtu.be/LC7SsyMR-oc](#) - El video muestra las consultas propuestas en funcionamiento desde la API y una breve explicación del modelo de recomendación.
 
+[https://leoc-pi-ml-ops-steam.onrender.com](#) - Enlace de mí MVP para consumo
+
 ¡Gracias por visitar mi proyecto! :rocket:
 
 
