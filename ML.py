@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import MultiLabelBinarizer
+import ast
 
 ruta_parquet_games = "datasets/data_steam_games.parquet"
 ruta_parquet_reviews = "datasets/data_reviews.parquet"
@@ -26,10 +27,16 @@ def recomendacion_juego(id_producto, num_recomendaciones=5):
     if id_producto not in genre_features.index:
         return {"error": "El juego no se encuentra en la base de datos."}
 
-    # Resto del código para calcular la similitud del coseno y obtener las recomendaciones
-    juego_seleccionado = np.array(genre_features.loc[id_producto].values).reshape(1, -1)
-    similaridades = cosine_similarity(juego_seleccionado, genre_features)
+    # Crear una copia del DataFrame de género y eliminar el juego seleccionado
+    genre_features_copy = genre_features.copy()
+    juego_seleccionado = genre_features_copy.loc[id_producto]
+    genre_features_copy.drop(id_producto, inplace=True)
 
+    # Resto del código para calcular la similitud del coseno y obtener las recomendaciones
+    juego_seleccionado = np.array(juego_seleccionado.values).reshape(1, -1)
+    similaridades = cosine_similarity(juego_seleccionado, genre_features_copy)
+
+    # Encuentra los juegos más similares sin incluir el juego seleccionado
     juegos_similares_indices = similaridades.argsort()[0][-num_recomendaciones:][::-1]
     juegos_recomendados = df_steam_copy.iloc[juegos_similares_indices, :]
 
