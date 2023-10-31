@@ -51,7 +51,7 @@ Se desarrolló un modelo de recomendación de juegos basado en la similitud del 
 
 ## Video de Presentación
 
-[Enlace al video de presentación](#) - El video muestra las consultas propuestas en funcionamiento desde la API y una breve explicación del modelo de recomendación.
+[https://youtu.be/LC7SsyMR-oc](#) - El video muestra las consultas propuestas en funcionamiento desde la API y una breve explicación del modelo de recomendación.
 
 ¡Gracias por visitar mi proyecto! :rocket:
 
