@@ -103,4 +103,4 @@ Este proyecto está bajo la Licencia XYZ. Consulta el archivo LICENSE.md para ob
 
 - **Nombre**: Leonardo Augusto Costa Hermes
 - **Correo Electrónico**: lcostahermes@gmail.com
-- **LinkedIn**: [linkedin.com/in/leonardo-costa-672a3a1b9](https://www.linkedin.com/in/leonardo-costa-672a3a1b9)
+- **LinkedIn**: [/in/leonardo-c-hermes](https://www.linkedin.com/in/leonardo-c-hermes)
